@@ -10,7 +10,7 @@ public class libGitTest {
 
     public static void main(String[] args) {
         libGitTest prepWork = new libGitTest();
-        prepWork.deleteFile("/path/to/repo", "file_to_delete.txt");
-        prepWork.createFolder("/path/to/repo", "new_folder");
+        prepWork.deleteFile("C:\\Users\\tommy\\IdeaProjects\\gitTesting", "analyzingSorts.py");
+        prepWork.createFolder("C:\\Users\\tommy\\IdeaProjects\\gitTesting", "new_folder");
     }
 }

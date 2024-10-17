@@ -57,11 +57,7 @@ public class jGitTesting {
         Git git = Git.open(repoDir);
         Path sourceFile = Path.of(filePath);
         Path fileToDelete = Path.of(repoDir.getAbsolutePath(), sourceFile.getFileName().toString());
-
-        // Delete the file from the repository directory
         Files.deleteIfExists(fileToDelete);
-
-        // Stage the deleted file in the Git index
         git.add().addFilepattern(sourceFile.getFileName().toString()).call();
         git.commit().setMessage("Deleted " + sourceFile.getFileName()).call();
         git.push()

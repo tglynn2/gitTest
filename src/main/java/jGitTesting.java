@@ -1,6 +1,5 @@
 import org.eclipse.jgit.api.Git;
 import org.eclipse.jgit.api.errors.GitAPIException;
-import org.eclipse.jgit.api.errors.NoFilepatternException;
 import org.eclipse.jgit.transport.UsernamePasswordCredentialsProvider;
 
 import java.io.File;
@@ -11,7 +10,7 @@ public class jGitTesting {
     public static void main(String[] args) {
         try {
             // Initialize the repository
-            File repoDir = new File("/path/to/my-git-repo");
+            File repoDir = new File("C:\\Users\\tommy\\IdeaProjects\\gitTesting");
             Git git = Git.open(repoDir);
 
             // Path to the file to be added
@@ -28,7 +27,7 @@ public class jGitTesting {
 
             // Push the changes (optional, if you have a remote repo setup)
             git.push()
-                    .setCredentialsProvider(new UsernamePasswordCredentialsProvider("your-username", "your-password"))
+                    .setCredentialsProvider(new UsernamePasswordCredentialsProvider("tglynn2", "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"))
                     .call();
 
             System.out.println("File uploaded to Git repo!");
@@ -38,5 +37,3 @@ public class jGitTesting {
         }
     }
 }
-
-

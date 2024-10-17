@@ -15,6 +15,9 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
     implementation("org.eclipse.jgit:org.eclipse.jgit:6.5.0.202303070854-r") // In Kotlin, parentheses are required here
     implementation(kotlin("stdlib-jdk8"))
+    implementation ("org.slf4j:slf4j-nop:2.0.0")
+
+
 }
 
 tasks.test {

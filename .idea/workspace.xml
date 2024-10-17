@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08cbb475-06a3-409a-8e8e-c2627d78eeac" name="Changes" comment="Fixed">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/jGitTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jGitTesting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +115,7 @@
       <workItem from="1729100013035" duration="4642000" />
       <workItem from="1729179684249" duration="1149000" />
       <workItem from="1729182272177" duration="91000" />
-      <workItem from="1729187111754" duration="658000" />
+      <workItem from="1729187111754" duration="1494000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed">
       <option name="closed" value="true" />

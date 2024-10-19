@@ -50,7 +50,7 @@ public class jGitTesting {
         git.push()
                 .setCredentialsProvider(new UsernamePasswordCredentialsProvider(username, password))
                 .call();
-        System.out.println("New folder created");
+        System.out.println("File Uploaded");
     }
 
     public static void newFolder(String repoPath, String folderName, String username, String password) throws IOException, GitAPIException {
@@ -65,7 +65,7 @@ public class jGitTesting {
         git.push()
                 .setCredentialsProvider(new UsernamePasswordCredentialsProvider(username, password))
                 .call();
-        System.out.println("File uploaded");
+        System.out.println("New folder created");
     }
 
 

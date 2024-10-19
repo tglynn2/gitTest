@@ -25,6 +25,7 @@ public class jGitTesting {
 
             uploadFile(repoPath, filePath2, username, password);
             deleteFile(repoPath, filePath, username, password);
+            newFolder(repoPath, "testNewFolder", username, password);
         } catch (IOException | GitAPIException e) {
             e.printStackTrace();
         }
@@ -49,8 +50,24 @@ public class jGitTesting {
         git.push()
                 .setCredentialsProvider(new UsernamePasswordCredentialsProvider(username, password))
                 .call();
-        System.out.println("File uploaded to Git repo!");
+        System.out.println("New folder created");
     }
+
+    public static void newFolder(String repoPath, String folderName, String username, String password) throws IOException, GitAPIException {
+        File repoDir = new File(repoPath);
+        Git git = Git.open(repoDir);
+        Path newDirec = Path.of(repoDir.getAbsolutePath(), folderName);
+        Files.createDirectories(newDirec);
+        Path placeholderFile = newDirec.resolve(".gitkeep");
+        Files.createFile(placeholderFile);
+        git.add().addFilepattern(folderName + "/.gitkeep").call();
+        git.commit().setMessage("Created new folder " + folderName).call();
+        git.push()
+                .setCredentialsProvider(new UsernamePasswordCredentialsProvider(username, password))
+                .call();
+        System.out.println("File uploaded");
+    }
+
 
     public static void deleteFile(String repoPath, String filePath, String username, String password) throws IOException, GitAPIException {
         File repoDir = new File(repoPath);
@@ -63,8 +80,6 @@ public class jGitTesting {
         git.push()
                 .setCredentialsProvider(new UsernamePasswordCredentialsProvider(username, password))
                 .call();
-
-        System.out.println("File deleted from Git repo!");
+        System.out.println("File deleted");
     }
-
 }

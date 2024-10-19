@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="08cbb475-06a3-409a-8e8e-c2627d78eeac" name="Changes" comment="Fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sortHw.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/jGitTesting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jGitTesting.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +115,14 @@
       <workItem from="1729179684249" duration="1149000" />
       <workItem from="1729182272177" duration="91000" />
       <workItem from="1729187111754" duration="2557000" />
-      <workItem from="1729189818069" duration="358000" />
+      <workItem from="1729189818069" duration="649000" />
+      <workItem from="1729217795437" duration="186000" />
+      <workItem from="1729269171938" duration="220000" />
+      <workItem from="1729271146242" duration="5000" />
+      <workItem from="1729271229281" duration="58000" />
+      <workItem from="1729272171612" duration="254000" />
+      <workItem from="1729272447257" duration="1089000" />
+      <workItem from="1729360950845" duration="950000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed">
       <option name="closed" value="true" />
